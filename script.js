@@ -2,10 +2,10 @@ let balance = 100_000;
 let originalPass = '3077';
 let currency = 'USD';
 
-function showBalance(){
+function displayBalance(){
   let userPass = prompt('Enter the password');
   if (originalPass === userPass) {
-    document.getElementById('display-text').innerHTML = balance;
+    showBalance();
   } else {
     alert('The password is not correct');
   }
@@ -18,20 +18,22 @@ function showWithdraw(){
     if (amount <= balance) {
       balance = balance - amount;
       alert('Your purchase is successed');
-      document.getElementById('display-text').innerHTML = balance;
+      showBalance();
     } else {
       alert('Your purchase is  not successed');
     }
   } else {
     alert('The password is not correct');
   }
-  
 }
-
 
 function addtopUp(){
   const amount = +prompt('How much do you want to topUp?');
   balance = amount + balance;
   alert('Your topUp is successed');
-  document.getElementById('display-text').innerHTML = balance;
+  showBalance();
+}
+
+function showBalance(){
+  document.getElementById('display-text').innerHTML = balance + ' ' + currency;
 }
