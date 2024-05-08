@@ -8,11 +8,14 @@
 </head>
 <body>
     <div id="card">
-        <input type="password" id="balance">
-        <button id="btnbalance" onclick="addbalance()">Balance</button>
-        <input type="password" id="withdraw">
-        <button id="btnwithdraw" onclick="addwithdraw()">Withdraw</button>
-        <button></button>
+        <div id="display">
+            <h3>Total Balance</h3>
+            <p id="display-text"></p>
+        </div>
+            <button id="btnbalance" onclick="showBalance()">Show Balance</button>
+            <button id="btnwithdraw" onclick="showWithdraw()"> Withdraw</button>
+            <button id="btntopUp" onclick="addtopUp()">TopUp</button>
+      
     </div>
     <script src="./script.js"></script>
 </body>

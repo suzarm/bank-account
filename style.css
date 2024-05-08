@@ -1,0 +1,45 @@
+#card{
+  margin:30px auto;
+  width:430px;
+  height:490px;
+  border:2px solid black;
+  background-color: lightgrey;
+}
+
+#display{
+  width:430px;
+  height:120px;
+}
+
+#balance{
+  margin:30px 10px 0px;
+  padding:5px;
+}
+
+#topUp,#withdraw{
+  margin:5px 10px;
+  padding:5px;
+}
+
+#btnwithdraw,#btntopUp, #btnbalance{
+  color:white;
+  padding:5px;
+  background-color: green;
+}
+
+#btntopUp:hover{
+  padding:7px;
+}
+
+#btnbalance:hover{
+  padding:7px;
+}
+
+#btnwithdraw:hover{
+  padding:7px;
+}
+
+#display-text, h3{
+  font-size:20px;
+  margin-left: 10px;;
+}
