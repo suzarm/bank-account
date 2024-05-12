@@ -1,11 +1,30 @@
 #card{
+  position:relative;
   margin:30px auto;
-  width:430px;
-  height:490px;
-  border:2px solid black;
-  background-color: lightgrey;
+  width:450px;
+  height:690px;
+  border:2px solid rgb(92, 84, 5);
+  border-radius: 4%;
 }
 
+#image{
+  position:absolute;
+  background-image: url(images/imgonline-com-ua-resize-9gfbnrwmp0cjlebd.webp);
+  width:450px;
+  height:290px;
+  border-radius: 5%;
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position:center;
+}
+
+#ion-icon {
+  color:white;
+  font-size:20px;
+  margin-right: 5px;
+  
+
+}
 #display{
   width:430px;
   height:120px;
@@ -16,15 +35,17 @@
   padding:5px;
 }
 
-#topUp,#withdraw{
-  margin:5px 10px;
-  padding:5px;
-}
-
-#btnwithdraw,#btntopUp, #btnbalance{
+#btnwithdraw,#btntopUp,#btnbalance,#btnhistory{
+  display:inline-flex;
+  justify-content: center;
+  align-items: center; 
+  border-radius:10px;
+  border:2px solid rgba(162, 138, 5, 0.929);
+  margin-top:200px;
   color:white;
   padding:5px;
-  background-color: green;
+  margin-right:10px;
+  background-color: rgb(92, 84, 5);
 }
 
 #btntopUp:hover{
@@ -32,7 +53,7 @@
 }
 
 #btnbalance:hover{
-  padding:7px;
+ padding:7px;
 }
 
 #btnwithdraw:hover{
@@ -40,6 +61,23 @@
 }
 
 #display-text, h3{
-  font-size:20px;
-  margin-left: 10px;;
+  font-size:35px;
+  font-weight:bold;
+  margin:90px 130px;
+  color:white;
+}
+span{
+  font-size:13px;
+}
+
+li{
+  list-style:none;
+}
+
+.red {
+  color: red;
+}
+
+.green {
+  color: green;
 }
