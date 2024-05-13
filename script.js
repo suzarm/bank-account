@@ -50,16 +50,16 @@ function showHistory(){
   if (history.length === 0){
     document.getElementById('history-display').innerHTML = 'No transactions';
   }else{
- document.getElementById('history-display').innerHTML = `<ul>
-  ${history.map((elem) => {
-    if (elem.type === 'in') {
-      return `<li class="green"> + ${elem.amount}${currency} ${formatDate(elem.date)}</li>`;
-    } else {
-      return `<li class="red"> - ${elem.amount}${currency} ${formatDate(elem.date)}</li>`;      
-    }
-  }).join('')}
- </ul>`; 
-}
+    document.getElementById('history-display').innerHTML = `<ul>
+    ${history.map((elem) => {
+      if (elem.type === 'in') {
+        return `<li class="green"> + ${elem.amount}${currency} ${formatDate(elem.date)}</li>`;
+      } else {
+        return `<li class="red"> - ${elem.amount}${currency} ${formatDate(elem.date)}</li>`;      
+      }
+    }).join('')}
+  </ul>`; 
+  }
 
 }
 
