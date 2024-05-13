@@ -36,7 +36,7 @@ function showWithdraw(){
 
 function addtopUp(){
   const amount = +prompt('How much do you want to topUp?');
-  balance = amount + balance;
+  balance = amount +  balance;
   alert('Your topUp is successed');
   history.push({ type: 'in', amount, date: new Date() });
   showBalance();
@@ -53,9 +53,9 @@ function showHistory(){
     document.getElementById('history-display').innerHTML = `<ul>
     ${history.map((elem) => {
       if (elem.type === 'in') {
-        return `<li class="green"> + ${elem.amount}${currency} ${formatDate(elem.date)}</li>`;
+        return `<li class="green"> + ${elem.amount} ${currency} ${formatDate(elem.date)}</li>`;
       } else {
-        return `<li class="red"> - ${elem.amount}${currency} ${formatDate(elem.date)}</li>`;      
+        return `<li class="red"> - ${elem.amount} ${currency} ${formatDate(elem.date)}</li>`;      
       }
     }).join('')}
   </ul>`; 
